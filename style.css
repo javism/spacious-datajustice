@@ -1,0 +1,50 @@
+/*
+Theme Name:   Spacious Datajustice
+Theme URI:    https://es.wordpress.org/themes/spacious/
+Description:  Spacious Datajustice Child Theme
+Author:       Javier Sánchez
+Author URI:   http://javism.github.io
+Template:     spacious
+Version:      1.0.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, right-sidebar, left-sidebar, flexible-header, custom-header, custom-background, custom-menu, custom-colors, sticky-post, threaded-comments, translation-ready, featured-images, theme-options, footer-widgets, blog, e-commerce, rtl-language-support
+Text Domain: spacious
+Text Domain:  spacious-datajustice
+*/
+
+/* fonts */
+
+@font-face {
+font-family: 'Lato';
+src: local('Lato Bold'), local('Lato-Bold'), url('fonts/Lato-Semibold.eot?#iefix') format('embedded-opentype'),  url('fonts/Lato-Semibold.woff') format('woff'), url('fonts/Lato-Semibold.ttf')  format('truetype');
+font-weight: bold;
+font-style: normal;
+}
+@font-face {
+font-family: 'Lato';
+src: local('Lato Regular'), local('Lato-Regular'), url('fonts/Lato-Ligth.eot?#iefix') format('embedded-opentype'),  url('fonts/Lato-Ligth.woff') format('woff'), url('fonts/Lato-Ligth.ttf')  format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+
+#featured-slider .entry-description-container {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.attachment-featured-blog-large.size-featured-blog-large.wp-post-image {
+	float: right;
+	margin: 0 10px 10px 10px;
+	max-width: 40%;
+}
+.size-featured-blog-large {
+	float: right;
+	margin: 0 10px 10px 10px;
+	max-width: 40%;
+}
+
+.textwidget p{
+	text-align: justify;
+
+}
