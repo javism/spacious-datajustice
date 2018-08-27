@@ -2,9 +2,9 @@
 
 Privacy-aware child theme of Spacious WordPress theme
 
-# How to implement visitors privacy in WordPres websites
+# How to implement visitors privacy in WordPress websites
 
-WordPres is by far the most widely used CMS for websites creation. It's a long term free-as-in-speech software project. However, the evolution of the project, plugins and templates has exposed users privacy. Initially, many people will host a blog in wordpress.com with a free or professional plan. If you do so, your visitors will be datafied by 15-17 trackers on average (even after disabling social network sharing buttons). There you can move to a self-managed hosting using wordpress.org implementation, but you still have to do several steps to get ride of trackers and cookies.
+WordPress is by far the most widely used CMS for websites creation. It's a long-term free-as-in-speech software project. However, the evolution of the project, plugins and templates has exposed users privacy. Initially, many people will host a blog in wordpress.com with a free or professional plan. If you do so, your visitors will be datafied by 15-17 trackers on average (even after disabling social network sharing buttons). There you can move to a self-managed hosting using wordpress.org implementation, but you still have to do several steps to get rid of trackers and cookies.
 
 # Install some privacy analysis tools for your browser
 
@@ -24,7 +24,7 @@ To verify that you are properly removing trackers and cookies from your website 
 
 Many templates and plugins include Google fonts. However the default setup implies that your visitors will retrieve the fonts from Google servers, potentially allowing Google to track your users. Google font's EULA allows you to download and serve the fonts in your own server. All the code listed below is available at https://github.com/javism/spacious-datajustice.
 
-These are the general steps. As an example we use a chiled theme  based on [Spacious theme](https://es.wordpress.org/themes/spacious/):
+These are the general steps. As an example we use a child theme  based on [Spacious theme](https://es.wordpress.org/themes/spacious/):
 
 1. [Create a WP child theme](https://codex.wordpress.org/Child_Themes) of your template.
 
@@ -61,9 +61,9 @@ add_action( 'wp_enqueue_scripts', 'spacious_dj_dequeue_google_fonts', 100 );
 
 # Cookies
 
-A clean installation of WordPress does not use tracking cookies, however, some plugins and external media can insert cookies in your visitor browser. As a general tool, you can use [WP DoNotTrack plugin](https://es.wordpress.org/plugins/wp-donottrack/).
+A clean installation of WordPress does not use tracking cookies, however, some plugins and external media can insert cookies into your visitor's browser. As a general tool, you can use [WP DoNotTrack plugin](https://es.wordpress.org/plugins/wp-donottrack/).
 
-YouTube includes a sharing option that does not use cookies streaming the video from youtube-nocookie.com, however, this option still adding remote code that might allow users tracking. If you want a privacy aware streaming option you might need to server the media through your servers.
+YouTube includes a sharing option that does not use cookies streaming the video from youtube-nocookie.com, however, this option still adding remote code that might allow users tracking. If you want a privacy-aware streaming option you might need to stream the media through your servers.
 
 If you still need to use external content, a simple trick proposed [here](https://brianpagan.net/2017/privacy-for-wordpress-in-3-steps/) is to create a thumbnail of the video and link the image to the external content.
 
